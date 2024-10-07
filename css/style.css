@@ -133,7 +133,6 @@ section.topo-do-site .flex{
     gap: 90px;
 }
 
-
 .topo-do-site h1 {
     color: rgb(255, 255, 255);
     font-size: 38px;
@@ -389,3 +388,113 @@ form .btn-enviar input {
     cursor: pointer;
 }
 
+
+
+/* TORNANDO O SITE RESPONSIVO */
+@media screen and (max-width: 1020px){
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site {
+        text-align: justify;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 10px;
+    }
+
+    /* MINHAS ESPECIALIDADES */
+    section.especialidades {
+        padding: 150px 8%;
+    }
+    section.especialidades {
+        margin-top: 40px 4%;
+        text-align: justify;
+    }
+    
+    section.especialidades .flex {
+        gap: 10px;
+        padding: 5px 10%;
+    }
+
+    .especialidades .especialidades-box-esquerda,
+    .especialidades .especialidades-box-centro,
+    .especialidades .especialidades-box-direita {
+        padding: 30px;
+        margin-top: 60px;
+        border-radius: 20px;
+    } 
+
+
+    /* SOBRE */
+    section.sobre {
+        padding: 20px 8%;
+    }
+
+    section.sobre .flex{
+        flex-direction: column-reverse;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .sobre .txt-sobre p {
+        margin: 20px ;
+        text-align: justify;
+        line-height: 22px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+     /* PORTIFOLIO */
+     section.portifolio {
+        padding: 100px 4%;
+        margin: 30px;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* FALE COMIGO */
+    section.formulario {
+        padding: 100px 8%;
+    }
+}
